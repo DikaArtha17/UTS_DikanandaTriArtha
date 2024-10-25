@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/lengthInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Panjang (cm)"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/widthInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lebar (cm)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/lengthInput"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/heightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tinggi (cm)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/widthInput"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:layout_below="@id/heightInput"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="16dp"
+        android:text="Volume: "
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/resultArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultVolume"
+        android:layout_marginTop="8dp"
+        android:text="Luas: "
+        android:textSize="18sp"/>
+</RelativeLayout>
